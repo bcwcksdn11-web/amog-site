@@ -1,0 +1,44 @@
+/* 앱과 같은 색 */
+:root { --paper: #ede5d9; --card: #f3ece1; --line: #dfd3c0; --ink: #231a13; --soft: #4a3d31; --grey: #71604f; --accent: #994f27; --pale: #f1e2d2; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--paper); color: var(--ink); font-family: Pretendard, -apple-system, 'Apple SD Gothic Neo', sans-serif; font-size: 16px; line-height: 1.7; word-break: keep-all; overflow-wrap: anywhere; }
+a { color: var(--accent); }
+.top { max-width: 880px; margin: 0 auto; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.logo { font-family: 'Instrument Serif', serif; font-size: 32px; color: var(--ink); text-decoration: none; line-height: 1; }
+nav { display: flex; gap: 18px; flex-wrap: wrap; font-size: 14px; }
+nav a { color: var(--soft); text-decoration: none; }
+nav a.on, nav a:hover { color: var(--accent); }
+main { max-width: 880px; margin: 0 auto; padding: 0 24px 60px; }
+
+.hero { text-align: center; padding: 72px 0 56px; }
+.word { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 96px; margin: 0; line-height: 1; }
+.tag { font-family: 'Gowun Batang', serif; font-size: 22px; margin: 18px 0 4px; }
+.lead { color: var(--grey); margin: 0; }
+.soon { display: inline-block; margin-top: 28px; padding: 6px 16px; border-radius: 99px; background: var(--pale); color: var(--accent); font-size: 14px; font-weight: 600; }
+.points { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.points div { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px; }
+.points h3 { font-family: 'Gowun Batang', serif; font-weight: 400; font-size: 20px; margin: 0 0 6px; }
+.points p { margin: 0; color: var(--soft); font-size: 15px; }
+
+.doc { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 36px 40px; }
+.doc h1 { font-family: 'Gowun Batang', serif; font-weight: 400; font-size: 30px; margin: 0 0 4px; }
+.doc .ver { color: var(--grey); font-size: 13px; margin: 0 0 18px; }
+.doc h2 { font-size: 18px; margin: 30px 0 8px; }
+.doc ul { padding-left: 20px; margin: 6px 0; }
+.doc li { margin: 4px 0; }
+.doc blockquote { margin: 14px 0; padding: 12px 16px; background: var(--pale); border-radius: 10px; color: var(--soft); }
+.contact { background: #fff8; border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; margin: 16px 0 6px; }
+.contact p { margin: 4px 0; }
+.muted { color: var(--grey); font-size: 14px; }
+
+footer { max-width: 880px; margin: 0 auto; padding: 28px 24px 48px; border-top: 1px solid var(--line); color: var(--grey); font-size: 13px; line-height: 1.8; }
+footer p { margin: 0 0 10px; }
+footer .adult { color: var(--soft); font-weight: 600; }
+footer a { color: var(--grey); }
+
+@media (max-width: 640px) {
+  .word { font-size: 72px; }
+  .points { grid-template-columns: 1fr; }
+  .doc { padding: 26px 20px; }
+  nav { gap: 12px; }
+}
