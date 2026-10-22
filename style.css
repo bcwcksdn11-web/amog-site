@@ -4,14 +4,14 @@
 html, body { margin: 0; background: var(--paper); color: var(--ink); font-family: Pretendard, -apple-system, 'Apple SD Gothic Neo', sans-serif; font-size: 16px; line-height: 1.7; word-break: keep-all; overflow-wrap: anywhere; }
 a { color: var(--accent); }
 .top { max-width: 880px; margin: 0 auto; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-.logo { font-family: 'Instrument Serif', serif; font-size: 32px; color: var(--ink); text-decoration: none; line-height: 1; }
+.logo { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 34px; color: var(--ink); text-decoration: none; line-height: 1; }
 nav { display: flex; gap: 18px; flex-wrap: wrap; font-size: 14px; }
 nav a { color: var(--soft); text-decoration: none; }
 nav a.on, nav a:hover { color: var(--accent); }
 main { max-width: 880px; margin: 0 auto; padding: 0 24px 60px; }
 
 .hero { text-align: center; padding: 72px 0 56px; }
-.word { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 96px; margin: 0; line-height: 1; }
+.word { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 96px; margin: 0; line-height: 1; }
 .tag { font-family: 'Gowun Batang', serif; font-size: 22px; margin: 18px 0 4px; }
 .lead { color: var(--grey); margin: 0; }
 .soon { display: inline-block; margin-top: 28px; padding: 6px 16px; border-radius: 99px; background: var(--pale); color: var(--accent); font-size: 14px; font-weight: 600; }
