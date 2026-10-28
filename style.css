@@ -1,7 +1,7 @@
 /* 앱 디자인 v3 "정해진 틀"과 같은 값 (app/src/theme, docs/07_디자인규칙.md)
    순백 바탕 · 상자 대신 가는 선과 여백 · 흑백 + 강조색(램프)은 작은 표시에만 */
 :root {
-  --paper: #ffffff; --fog: #f4f4f4; --ink: #111111; --soft: #444444; --grey: #888888;
+  --paper: #ffffff; --fog: #f4f4f4; --ink: #111111; --soft: #444444; --grey: #767676;
   --line: #eeeeee; --lineStrong: #dddddd; --accent: #c0652e;
   --lampTop: #fce7c3; --lampMid: #f6c28d; --lampBottom: #ee9f72; --night: #24212b;
 }
