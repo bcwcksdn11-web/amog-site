@@ -61,3 +61,15 @@ footer a:hover { color: var(--ink); }
   .hero { padding: 56px 0 48px; }
   nav { gap: 14px; }
 }
+
+/* 아모그 이야기: 편지 */
+.letter { max-width: 600px; margin: 0 auto; padding: 64px 0 24px; font-family: 'Gowun Batang', serif; }
+.letter p { font-size: 17px; line-height: 2; color: var(--soft); margin: 0 0 22px; }
+.letter h1 { font-family: 'Gowun Batang', serif; font-weight: 400; font-size: 30px; margin: 0 0 36px; color: var(--ink); }
+.letter .l-k { font-family: Pretendard, sans-serif; font-size: 13px; font-weight: 600; color: var(--accent); margin-bottom: 14px; }
+.letter .l-big { font-size: 22px; line-height: 1.8; color: var(--ink); margin: 34px 0; padding-left: 18px; border-left: 2px solid var(--lampMid); }
+.letter .l-sign { text-align: right; color: var(--ink); margin-top: 40px; }
+.letter .l-cta { text-align: center; font-family: Pretendard, sans-serif; margin-top: 48px; }
+.btn { display: inline-flex; align-items: center; height: 52px; padding: 0 26px; border-radius: 8px; background: var(--ink); color: #fff; font-weight: 600; font-size: 16px; text-decoration: none; }
+.btn:hover { color: #fff; opacity: .88; }
+@media (max-width: 640px) { .letter p { font-size: 16px; } .letter h1 { font-size: 25px; } .letter .l-big { font-size: 19px; } }
