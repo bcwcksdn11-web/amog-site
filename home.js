@@ -45,7 +45,11 @@
       body: JSON.stringify({ p_email: email, p_adult: true, p_privacy: true, p_ad: true, p_source: (new URLSearchParams(location.search).get('from') || 'site').slice(0, 40) })
     }).then(function (r) {
       if (!r.ok) throw new Error(String(r.status));
-      f.innerHTML = '<p class="n-done">신청했어요. 출시되면 <b>' + email.replace(/</g, '') + '</b>로 가장 먼저 알려 드릴게요.</p>';
+      // 받은 글자를 HTML 로 넣지 않는다 (textContent)
+      var done = document.createElement('p'); done.className = 'n-done';
+      var b = document.createElement('b'); b.textContent = email;
+      done.append('신청했어요. 출시되면 ', b, '로 가장 먼저 알려 드릴게요.');
+      f.replaceChildren(done);
     }).catch(function () {
       btn.disabled = false; btn.textContent = '알림 받기';
       msg.textContent = '지금은 신청을 받지 못했어요. 잠시 뒤 다시 해 주세요.';
